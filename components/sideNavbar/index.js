@@ -43,10 +43,10 @@ const Navbar = (props) => {
               </button>
             </div>
             <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
-              <div className="flex-shrink-0 flex items-center px-4">
+              <a href='https://timeless.co/' className="flex-shrink-0 flex items-center px-4 hover:bg-gray-100">
                 <img className="h-8 w-auto" src="https://avatars1.githubusercontent.com/u/4126967?s=200&v=4" alt="Workflow" />
-                <h6>Timeless</h6>
-              </div>
+                <h6 className="pl-2">Timeless Co.</h6>
+              </a>
               <nav className="mt-5 px-2">
                 <Link href='/ios'>
                   <a className="group flex items-center px-2 py-2 text-base leading-6 font-medium text-gray-900 rounded-md bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
@@ -67,7 +67,7 @@ const Navbar = (props) => {
               </nav>
             </div>
             <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-              <a href="#" className="flex-shrink-0 group block focus:outline-none">
+              <a href="https://github.com/Karthik-B-06" className="flex-shrink-0 group block focus:outline-none focus:bg-gray-300">
                 <div className="flex items-center">
                   <div>
                     <img className="inline-block h-10 w-10 rounded-full" src="https://avatars2.githubusercontent.com/u/35562287?s=400&u=485e1dd30dcbba570c75251c39e047ac6b6329cc&v=4" alt="" />
@@ -93,10 +93,10 @@ const Navbar = (props) => {
           {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
           <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-              <div className="flex items-center flex-shrink-0 px-4">
-                <img className="h-8 w-auto" src="https://avatars1.githubusercontent.com/u/4126967?s=200&v=4" alt="Workflow" />
-                <h6 className='pl-2'>Timeless Co.</h6>
-              </div>
+              <a href='https://timeless.co/' className="flex-shrink-0 flex items-center px-2 rounded-lg mx-2 py-2 hover:bg-gray-400">
+                <img className="h-6 w-auto" src="https://avatars1.githubusercontent.com/u/4126967?s=200&v=4" alt="Workflow" />
+                <h6 className="pl-2">Timeless Co.</h6>
+              </a>
               <nav className="mt-5 flex-1 px-2 bg-white">
                 <Link href='/ios'>
                   <a className={classnames(["group flex items-center px-2 py-2 text-base leading-6 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:text-gray-900 focus:bg-gray-200 transition ease-in-out duration-150", { 'bg-gray-200': router.pathname === '/ios' }])}>
@@ -116,8 +116,8 @@ const Navbar = (props) => {
                 </Link>
               </nav>
             </div>
-            <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-              <a href="#" className="flex-shrink-0 w-full group block">
+            <div className="flex-shrink-0 flex border-t border-gray-200 p-2 m-2 rounded-md hover:bg-gray-300">
+              <a href="https://github.com/Karthik-B-06" className="flex-shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
                     <img className="inline-block h-8 w-8 rounded-full" src="https://avatars2.githubusercontent.com/u/35562287?s=400&u=485e1dd30dcbba570c75251c39e047ac6b6329cc&v=4" alt="" />
