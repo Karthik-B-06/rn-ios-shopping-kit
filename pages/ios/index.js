@@ -1,4 +1,5 @@
 const { default: CarouselComponent } = require("../../components/carousel");
+const { default: Sections } = require("../../components/sections");
 
 const Ios = () => {
   const brandsLight = [
@@ -15,7 +16,8 @@ const Ios = () => {
   ]
   return (
     <>
-      {/* <CarouselComponent /> */}
+      <Sections sections={brandsLight} sectionTitle='Brands Screen - Light' />
+      <Sections sections={brandsDark} sectionTitle='Brands Screen - Dark' />
     </>
   )
 }

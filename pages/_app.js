@@ -10,11 +10,10 @@ export default ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Shopping</title>
+        <title>React Native</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
+      <Navbar component={<Component {...pageProps} />} />
     </>
   )
 }
