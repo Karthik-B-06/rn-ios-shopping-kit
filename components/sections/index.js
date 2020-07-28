@@ -1,7 +1,6 @@
-import { map, times } from "lodash";
+import { map } from "lodash";
 
 const Sections = ({ sections, sectionTitle }) => {
-  console.log(sections)
   return (
     <>
       <div className="max-w-7xl mx-auto px-0 sm:px-0 md:px-0 md:pb-3">

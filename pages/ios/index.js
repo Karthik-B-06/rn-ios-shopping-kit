@@ -1,4 +1,3 @@
-const { default: CarouselComponent } = require("../../components/carousel");
 const { default: Sections } = require("../../components/sections");
 
 const Ios = () => {
