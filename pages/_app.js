@@ -1,6 +1,6 @@
 import '../styles.css';
 import Head from 'next/head';
-import Navbar from '../src/navbar';
+import Navbar from '../components/navbar';
 
 export default ({ Component, pageProps }) => {
   return (
