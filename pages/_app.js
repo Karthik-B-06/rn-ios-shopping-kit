@@ -10,7 +10,9 @@ export default ({ Component, pageProps }) => {
         <title>React Native</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar component={<Component {...pageProps} />} />
+      <body className='font-sans'>
+        <Navbar component={<Component {...pageProps} />} />
+      </body>
     </>
   )
 }

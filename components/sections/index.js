@@ -11,7 +11,7 @@ const Sections = ({ sections, sectionTitle }) => {
           map(sections, (sectionImage) => {
             return (
               <li className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow">
-                <div className="relative flex-1 flex flex-col" style={{ paddingBottom: '200%' }}>
+                <div className="relative flex-1 flex flex-col" style={{ paddingBottom: '218%' }}>
                   <img className="absolute h-full w-full flex-shrink-0 mx-auto bg-black" src={sectionImage} alt="" />
                 </div>
               </li>
