@@ -1,6 +1,6 @@
 const { default: Sections } = require("../../components/sections");
 
-const Ios = () => {
+const Ios = (props) => {
   const brandsLight = [
     './brands/light/BrandsDesigners.png',
     './brands/light/BrandsDesignersScrolled.png',
@@ -13,24 +13,27 @@ const Ios = () => {
     './brands/dark/BrandsManufacturers.png',
     './brands/dark/BrandsManufacturersScrolled.png'
   ]
-  // const shopLight = [
-  //   './shop/light/BrandsDesigners.png',
-  //   './shop/light/BrandsDesignersScrolled.png',
-  //   './shop/light/BrandsManufacturers.png',
-  //   './shop/light/BrandsManufacturersScrolled.png'
-  // ]
-  // const shopDark = [
-  //   './shop/dark/BrandsDesigners.png',
-  //   './shop/dark/BrandsDesignersScrolled.png',
-  //   './shop/dark/BrandsManufacturers.png',
-  //   './shop/dark/BrandsManufacturersScrolled.png'
-  // ]
-  return (
+  const shopLight = [
+    './shop/light/ShopScreen.png',
+    './shop/light/ShopScreenScrolled.png',
+    './shop/light/ShopScreenSearchFocussed.png',
+  ]
+  const shopDark = [
+    './shop/dark/ShopScreen.png',
+    './shop/dark/ShopScreenScrolled.png',
+    './shop/dark/ShopScreenSearchFocussed.png',
+  ]
+  return props?.theme === 'LIGHT' ? (
     <>
       <Sections sections={brandsLight} sectionTitle='Brands Screen - Light' />
-      <Sections sections={brandsDark} sectionTitle='Brands Screen - Dark' />
+      <Sections sections={shopLight} sectionTitle='Shop Screen - Light' />
     </>
-  )
+  ) : (
+      <>
+        <Sections sections={brandsDark} sectionTitle='Brands Screen - Dark' />
+        <Sections sections={shopDark} sectionTitle='Shop Screen - Dark' />
+      </>
+    )
 }
 
 export default Ios;

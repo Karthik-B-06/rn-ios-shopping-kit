@@ -6,10 +6,7 @@ const Home = () => {
   useEffect(() => {
     router.push('/ios')
   })
-  return (
-    <>
-    </>
-  )
+  return null;
 }
 
 export default Home;
