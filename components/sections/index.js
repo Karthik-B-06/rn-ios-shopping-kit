@@ -10,9 +10,9 @@ const Sections = ({ sections, sectionTitle }) => {
         {
           map(sections, (sectionImage, index) => {
             return (
-              <li key={index} className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow p-2 mt-2">
+              <li key={index} className="col-span-1 flex flex-col text-center bg-white shadow-md mt-2">
                 <div className="relative flex-1 flex flex-col" style={{ paddingBottom: '218%' }}>
-                  <img className="absolute h-full w-full flex-shrink-0 mx-auto bg-black" src={sectionImage} alt="" />
+                  <img className="absolute h-full w-full flex-shrink-0 mx-auto bg-gray-300" src={sectionImage} alt="" />
                 </div>
               </li>
             )
