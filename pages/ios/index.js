@@ -25,14 +25,25 @@ const discoverDark = [
   './discover/dark/scrolled3.png',
 ]
 
+const accountDark = [
+  './account/dark/initial.png',
+  './account/dark/scrolled.png'
+]
+const accountLight = [
+  './account/light/initial.png',
+  './account/light/scrolled.png'
+]
+
 const Ios = (props) => {
   return props?.theme === 'LIGHT' ? (
     <>
+      <Sections sections={accountLight} sectionTitle='Account Screen - Light' />
       <Sections sections={shopLight} sectionTitle='Shop Screen - Light' />
       <Sections sections={discoverLight} sectionTitle='Discover Screen - Light' />
     </>
   ) : (
       <>
+        <Sections sections={accountDark} sectionTitle='Account Screen - Dark' />
         <Sections sections={shopDark} sectionTitle='Shop Screen - Dark' />
         <Sections sections={discoverDark} sectionTitle='Discover Screen - Dark' />
       </>
