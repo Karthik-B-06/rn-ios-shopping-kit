@@ -44,21 +44,31 @@ const checkoutDark = [
   './checkout/dark/scrolled.png'
 ]
 
+const shoppingbagLight = [
+  './shoppingbag/light/initial.png',
+]
+
+const shoppingbagDark = [
+  './shoppingbag/dark/initial.png',
+]
+
 const Ios = (props) => {
   return props?.theme === 'LIGHT' ? (
     <>
-      <Sections sections={accountLight} sectionTitle='Account Screen - Light' />
-      <Sections sections={shopLight} sectionTitle='Shop Screen - Light' />
-      <Sections sections={discoverLight} sectionTitle='Discover Screen - Light' />
-      <Sections sections={checkoutLight} sectionTitle='Checkout Screen - Light' />
+      <Sections sections={accountLight} sectionTitle='Account  - Light' />
+      <Sections sections={shopLight} sectionTitle='Shop  - Light' />
+      <Sections sections={discoverLight} sectionTitle='Discover  - Light' />
+      <Sections sections={shoppingbagLight} sectionTitle='Shopping Bag  - Light' />
+      <Sections sections={checkoutLight} sectionTitle='Checkout  - Light' />
 
     </>
   ) : (
       <>
-        <Sections sections={accountDark} sectionTitle='Account Screen - Dark' />
-        <Sections sections={shopDark} sectionTitle='Shop Screen - Dark' />
-        <Sections sections={discoverDark} sectionTitle='Discover Screen - Dark' />
-        <Sections sections={checkoutDark} sectionTitle='Checkout Screen - Dark' />
+        <Sections sections={accountDark} sectionTitle='Account  - Dark' />
+        <Sections sections={shopDark} sectionTitle='Shop  - Dark' />
+        <Sections sections={discoverDark} sectionTitle='Discover  - Dark' />
+        <Sections sections={shoppingbagDark} sectionTitle='Shopping  - Dark' />
+        <Sections sections={checkoutDark} sectionTitle='Checkout  - Dark' />
 
       </>
     )
