@@ -13,29 +13,45 @@ import {
   designerDark,
   productLight,
   productDark,
+  shoppingbagLight,
+  shoppingbagDark,
 } from "../../src/utils/assetFiles";
 import Sections from "../../src/components/sections";
 
 const Ios = (props) => {
   return props?.theme === "LIGHT" ? (
     <>
-      <Sections sections={shopLight} sectionTitle="Shop" />
-      <Sections sections={brandsMLight} sectionTitle="Brands-Manufacturer" />
-      <Sections sections={brandsDLight} sectionTitle="Brands-Designers" />
-      <Sections sections={discoverLight} sectionTitle="Discover" />
+      <Sections sections={shopLight} sectionTitle="Shop Screen" />
+      <Sections
+        sections={brandsMLight}
+        sectionTitle="Brands-Manufacturer Screen"
+      />
+      <Sections
+        sections={brandsDLight}
+        sectionTitle="Brands-Designers Screen"
+      />
+      <Sections sections={discoverLight} sectionTitle="Discover Screen" />
       <Sections sections={catalogLight} sectionTitle="Catalog Screen" />
       <Sections sections={designerLight} sectionTitle="Designer Screen" />
       <Sections sections={productLight} sectionTitle="Product Screen" />
+      <Sections
+        sections={shoppingbagLight}
+        sectionTitle="Shopping Bag Screen"
+      />
     </>
   ) : (
     <>
-      <Sections sections={shopDark} sectionTitle="Shop" />
-      <Sections sections={brandsMDark} sectionTitle="Brands-Manufacturer" />
-      <Sections sections={brandsDDark} sectionTitle="Brands-Designers" />
-      <Sections sections={discoverDark} sectionTitle="Discover" />
+      <Sections sections={shopDark} sectionTitle="Shop Screen" />
+      <Sections
+        sections={brandsMDark}
+        sectionTitle="Brands-Manufacturer Screen"
+      />
+      <Sections sections={brandsDDark} sectionTitle="Brands-Designers Screen" />
+      <Sections sections={discoverDark} sectionTitle="Discover Screen" />
       <Sections sections={catalogDark} sectionTitle="Catalog Screen" />
       <Sections sections={designerDark} sectionTitle="Designer Screen" />
       <Sections sections={productDark} sectionTitle="Product Screen" />
+      <Sections sections={shoppingbagDark} sectionTitle="Shopping Bag Screen" />
     </>
   );
 };
