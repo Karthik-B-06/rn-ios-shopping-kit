@@ -45,6 +45,16 @@ export const discoverDark = [
   "/discover/dark/searchfocussed.png",
 ];
 
+export const catalogLight = [
+  "/catalog/light/initial.png",
+  "/catalog/light/scrolled.png",
+];
+
+export const catalogDark = [
+  "/catalog/dark/initial.png",
+  "/catalog/dark/scrolled.png",
+];
+
 export const accountDark = [
   "/account/dark/initial.png",
   "/account/dark/scrolled.png",
