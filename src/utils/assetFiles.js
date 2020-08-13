@@ -83,14 +83,8 @@ export const shoppingbagLight = ["/shoppingbag/light/initial.png"];
 
 export const shoppingbagDark = ["/shoppingbag/dark/initial.png"];
 
-export const accountDark = [
-  "/account/dark/initial.png",
-  "/account/dark/scrolled.png",
-];
-export const accountLight = [
-  "/account/light/initial.png",
-  "/account/light/scrolled.png",
-];
+export const accountDark = ["/account/dark/initial.png"];
+export const accountLight = ["/account/light/initial.png"];
 
 export const checkoutLight = [
   "/checkout/light/initial.png",
