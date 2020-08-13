@@ -32,17 +32,17 @@ export const brandsDDark = [
 
 export const discoverLight = [
   "/discover/light/initial.png",
-  "/discover/light/scrolled.png",
   "/discover/light/scrolled1.png",
   "/discover/light/scrolled2.png",
   "/discover/light/scrolled3.png",
+  "/discover/light/searchfocussed.png",
 ];
 export const discoverDark = [
   "/discover/dark/initial.png",
-  "/discover/dark/scrolled.png",
   "/discover/dark/scrolled1.png",
   "/discover/dark/scrolled2.png",
   "/discover/dark/scrolled3.png",
+  "/discover/dark/searchfocussed.png",
 ];
 
 export const accountDark = [
