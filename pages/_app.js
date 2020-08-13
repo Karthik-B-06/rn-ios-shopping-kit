@@ -10,7 +10,7 @@ export default ({ Component, pageProps }) => {
   return (
     <html>
       <Head>
-        <title>React Native</title>
+        <title>Shopping Kit</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className="font-sans">
