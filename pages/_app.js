@@ -1,9 +1,7 @@
 import "../styles.css";
-
 import Head from "next/head";
-
 import { useState } from "react";
-import Navbar from "../src/components/sideNavbar";
+import Navbar from "../components/sideNavbar";
 
 export default ({ Component, pageProps }) => {
   const [theme, setTheme] = useState("LIGHT");
