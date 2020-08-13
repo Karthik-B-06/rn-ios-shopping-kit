@@ -15,6 +15,8 @@ import {
   productDark,
   shoppingbagLight,
   shoppingbagDark,
+  checkoutDark,
+  checkoutLight,
 } from "../../src/utils/assetFiles";
 import Sections from "../../src/components/sections";
 
@@ -38,6 +40,7 @@ const Ios = (props) => {
         sections={shoppingbagLight}
         sectionTitle="Shopping Bag Screen"
       />
+      <Sections sections={checkoutLight} sectionTitle="Checkout Screen" />
     </>
   ) : (
     <>
@@ -52,6 +55,7 @@ const Ios = (props) => {
       <Sections sections={designerDark} sectionTitle="Designer Screen" />
       <Sections sections={productDark} sectionTitle="Product Screen" />
       <Sections sections={shoppingbagDark} sectionTitle="Shopping Bag Screen" />
+      <Sections sections={checkoutDark} sectionTitle="Checkout Screen" />
     </>
   );
 };
