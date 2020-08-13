@@ -1,22 +1,25 @@
-import '../styles.css';
+import "../styles.css";
 
-import Head from 'next/head';
+import Head from "next/head";
 
-import Navbar from '../components/sideNavbar';
-import { useState } from 'react';
-
+import { useState } from "react";
+import Navbar from "../src/components/sideNavbar";
 
 export default ({ Component, pageProps }) => {
-  const [theme, setTheme] = useState('LIGHT');
+  const [theme, setTheme] = useState("LIGHT");
   return (
     <html>
       <Head>
         <title>React Native</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className='font-sans'>
-        <Navbar theme={theme} setTheme={setTheme} component={<Component theme={theme} {...pageProps} />} />
+      <body className="font-sans">
+        <Navbar
+          theme={theme}
+          setTheme={setTheme}
+          component={<Component theme={theme} {...pageProps} />}
+        />
       </body>
     </html>
-  )
-}
+  );
+};
