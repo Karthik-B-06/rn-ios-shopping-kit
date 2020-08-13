@@ -23,7 +23,8 @@ import {
   shoppingbagDark,
   shoppingbagLight,
   wishlistLight,
-  wishlistDark
+  wishlistDark,
+  collectionLight,
 } from "../../src/utils/assetFiles";
 
 const Ios = (props) => {
@@ -50,7 +51,7 @@ const Ios = (props) => {
       <Sections sections={accountLight} sectionTitle="Account Screen" />
       <Sections sections={authLight} sectionTitle="Auth Screen" />
       <Sections sections={wishlistLight} sectionTitle="Wishlist Screen" />
-
+      <Sections sections={collectionLight} sectionTitle="Collection Screen" />
     </>
   ) : (
     <>
@@ -69,6 +70,7 @@ const Ios = (props) => {
       <Sections sections={accountDark} sectionTitle="Account Screen" />
       <Sections sections={authDark} sectionTitle="Auth Screen" />
       <Sections sections={wishlistDark} sectionTitle="Wishlist Screen" />
+      <Sections sections={catalogDark} sectionTitle="Collection Screen" />
     </>
   );
 };

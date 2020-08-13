@@ -102,3 +102,13 @@ export const checkoutDark = [
 export const wishlistLight = ["/wishlist/light/initial.png"];
 
 export const wishlistDark = ["/wishlist/dark/initial.png"];
+
+export const collectionLight = [
+  "/collection/light/initial.png",
+  "/collection/light/scrolled.png",
+];
+
+export const collectionDark = [
+  "/collection/dark/initial.png",
+  "/collection/dark/scrolled.png",
+];
