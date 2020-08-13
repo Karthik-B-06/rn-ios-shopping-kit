@@ -21,6 +21,8 @@ import {
   accountDark,
   signupLight,
   signupDark,
+  authLight,
+  authDark,
 } from "../../src/utils/assetFiles";
 import Sections from "../../src/components/sections";
 
@@ -46,7 +48,7 @@ const Ios = (props) => {
       />
       <Sections sections={checkoutLight} sectionTitle="Checkout Screen" />
       <Sections sections={accountLight} sectionTitle="Account Screen" />
-      <Sections sections={signupLight} sectionTitle="Signup Screen" />
+      <Sections sections={authLight} sectionTitle="Auth Screen" />
     </>
   ) : (
     <>
@@ -63,7 +65,7 @@ const Ios = (props) => {
       <Sections sections={shoppingbagDark} sectionTitle="Shopping Bag Screen" />
       <Sections sections={checkoutDark} sectionTitle="Checkout Screen" />
       <Sections sections={accountDark} sectionTitle="Account Screen" />
-      <Sections sections={signupDark} sectionTitle="Signup Screen" />
+      <Sections sections={authDark} sectionTitle="Auth Screen" />
     </>
   );
 };
