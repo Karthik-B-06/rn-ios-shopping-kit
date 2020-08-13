@@ -11,6 +11,8 @@ import {
   catalogLight,
   designerLight,
   designerDark,
+  productLight,
+  productDark,
 } from "../../src/utils/assetFiles";
 import Sections from "../../src/components/sections";
 
@@ -23,6 +25,7 @@ const Ios = (props) => {
       <Sections sections={discoverLight} sectionTitle="Discover" />
       <Sections sections={catalogLight} sectionTitle="Catalog Screen" />
       <Sections sections={designerLight} sectionTitle="Designer Screen" />
+      <Sections sections={productLight} sectionTitle="Product Screen" />
     </>
   ) : (
     <>
@@ -31,11 +34,8 @@ const Ios = (props) => {
       <Sections sections={brandsDDark} sectionTitle="Brands-Designers" />
       <Sections sections={discoverDark} sectionTitle="Discover" />
       <Sections sections={catalogDark} sectionTitle="Catalog Screen" />
-      <Sections
-        sections={designerDark}
-        sectionTitle="Designer
-       Screen"
-      />
+      <Sections sections={designerDark} sectionTitle="Designer Screen" />
+      <Sections sections={productDark} sectionTitle="Product Screen" />
     </>
   );
 };

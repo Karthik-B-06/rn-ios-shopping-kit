@@ -65,6 +65,20 @@ export const designerDark = [
   "/designer/dark/scrolled.png",
 ];
 
+export const productLight = [
+  "/product/light/initial.png",
+  "/product/light/scrolled.png",
+  "/product/light/scrolled1.png",
+  "/product/light/addtocart.png",
+];
+
+export const productDark = [
+  "/product/dark/initial.png",
+  "/product/dark/scrolled.png",
+  "/product/dark/scrolled1.png",
+  "/product/dark/addtocart.png",
+];
+
 export const accountDark = [
   "/account/dark/initial.png",
   "/account/dark/scrolled.png",
